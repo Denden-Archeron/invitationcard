@@ -28,7 +28,7 @@ export default function Home() {
 
       {/* Date & Details Section */}
       <section className="grid gap-3 animate-fade-up" style={{animationDelay: '0.1s'}}>
-        <Info label="📅 Date">26th & 27th Sept 2025</Info>
+        <Info label="📅 Date">27th & 28th Sept 2025</Info>
         <Info label="👗 Dress Code">Will be reveal</Info>
         <Info label="📍 Meeting Point">Coordinate will be here later…</Info>
       </section>
