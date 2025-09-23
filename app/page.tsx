@@ -29,7 +29,7 @@ export default function Home() {
       {/* Date & Details Section */}
       <section className="grid gap-3 animate-fade-up" style={{animationDelay: '0.1s'}}>
         <Info label="📅 Date">26th & 27th Sept 2025</Info>
-        <Info label="👗 Dress Code">Baby Blue / Navy Blue & White</Info>
+        <Info label="👗 Dress Code">Will be reveal</Info>
         <Info label="📍 Meeting Point">Coordinate will be here later…</Info>
       </section>
 
@@ -37,17 +37,39 @@ export default function Home() {
       <section className="cute-card animate-fade-up hover-scale" style={{animationDelay: '0.2s'}}>
         <div className="text-center mb-4">
           <h2 className="text-xl font-bold bg-gradient-to-r from-[#f9a8d4] to-[#a5d8ff] bg-clip-text text-transparent">
-            💕 Our Sweet Day Tentative 💕
+            💕 Our Sweet 1st Day Tentative 💕
           </h2>
         </div>
         <ul className="space-y-3">
           {[
-            { time: "8:37 AM", activity: "Breakfast at Makan Pagi by Fizzy Café ☕🥐" },
-            { time: "10:07 AM", activity: "Explore Penang Street Art & Jetty Walk 📸🛵🍧" },
-            { time: "1:25 PM", activity: "Lunch at Deen Maju Nasi Kandar 🍛" },
-            { time: "3:00 PM", activity: "Surprise activity from you 💌✨" },
-            { time: "5:30 PM", activity: "Romantic view at Padang Kota 🌊" },
-            { time: "6:45 PM", activity: "Send off at KTM 🚆 (Train departs 7:21 PM)" }
+            { time: "1:00 PM", activity: "..." },
+            { time: "3:00 PM", activity: "..." },
+            { time: "5:00 PM", activity: "..." },
+            { time: "7:00 PM", activity: "..." },
+            { time: "7:30 PM", activity: "..." },
+            { time: "8:00 PM", activity: "..." }
+          ].map((item, index) => (
+            <li key={index} className="flex items-start space-x-3 group hover:translate-x-1 transition-transform">
+              <span className="font-bold text-[#a5d8ff] min-w-[70px] text-sm">{item.time}</span>
+              <span className="text-gray-700 group-hover:text-gray-900 transition-colors">{item.activity}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+      <section className="cute-card animate-fade-up hover-scale" style={{animationDelay: '0.2s'}}>
+        <div className="text-center mb-4">
+          <h2 className="text-xl font-bold bg-gradient-to-r from-[#f9a8d4] to-[#a5d8ff] bg-clip-text text-transparent">
+            💕 Our Sweet 2nd Day Tentative 💕
+          </h2>
+        </div>
+        <ul className="space-y-3">
+          {[
+            { time: "10:00 PM", activity: "..." },
+            { time: "12:00 PM", activity: "..." },
+            { time: "2:00 PM", activity: "..." },
+            { time: "4:00 PM", activity: "..." },
+            { time: "6:30 PM", activity: "..." },
+            { time: "7:00 PM", activity: "..." }
           ].map((item, index) => (
             <li key={index} className="flex items-start space-x-3 group hover:translate-x-1 transition-transform">
               <span className="font-bold text-[#a5d8ff] min-w-[70px] text-sm">{item.time}</span>
@@ -61,10 +83,10 @@ export default function Home() {
       <section className="cute-card animate-fade-up hover-scale bg-gradient-to-br from-pink-50 to-blue-50" style={{animationDelay: '0.3s'}}>
         <div className="flex items-center space-x-2 mb-2">
           <span className="text-2xl">💌</span>
-          <h3 className="text-lg font-bold text-gray-800">Your Choice Mystery Activity</h3>
+          <h3 className="text-lg font-bold text-gray-800">Mystery Activity</h3>
         </div>
         <p className="text-gray-700 italic">
-          Think of a place that feels perfect for us… Surprise me ✨
+          Once told once accepted, no turning back! Prepare for a delightful surprise that will make our day even more special. Can&apos;t wait to see your reaction!
         </p>
       </section>
 
@@ -75,11 +97,7 @@ export default function Home() {
         </h2>
         <ul className="grid gap-2">
           {[
-            "Bawa powerbank & phone cukup bateri 🔋📱",
-            "Pakai kasut selesa 👟",
-            "Bawa payung 🌂",
-            "Sediakan senyum paling manis 😍",
-            "Tidur awal yer yangg 😴"
+            "Akan di reveal kemudian...",
           ].map((note, index) => (
             <li key={index} className="flex items-center space-x-3 group hover:bg-white/50 rounded-lg p-2 transition-all">
               <span className="w-2 h-2 bg-[#f9a8d4] rounded-full flex-shrink-0"></span>
