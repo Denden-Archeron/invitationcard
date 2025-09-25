@@ -134,6 +134,28 @@ export default function Home() {
         <Info label="⏰ Meeting Time">Friday 26th of September 2025</Info>
       </section>
 
+      {/* Things to bring */}
+      <section className="cute-card animate-fade-up hover-scale" style={{animationDelay: '0.35s'}}>
+        <h2 className="text-xl font-bold text-center mb-4 bg-gradient-to-r from-[#f9a8d4] to-[#a5d8ff] bg-clip-text text-transparent">
+          Barangan yang perlu 📝
+        </h2>
+        <ul className="grid gap-2">
+          {[
+            "Beg dan pakaian untuk 2 hari mengikut dress code.",
+            "Peralatan mandi, skincare, dan ubat-ubatan peribadi.",
+            "Peralatan elektronik seperti pengecas, power bank, dan kamera.",
+            "Peraturan solat (jika perlu).",
+            "Makanan ringan atau minuman (jika perlu, bagi mengelakkan gastric).",
+            "Kasut yang selesa untuk berjalan.",
+            "Dompet dengan kad pengenalan dan dokumen yang diperlukan."
+          ].map((note, index) => (
+            <li key={index} className="flex items-center space-x-3 group hover:bg-white/50 rounded-lg p-2 transition-all">
+              <span className="w-2 h-2 bg-[#f9a8d4] rounded-full flex-shrink-0"></span>
+              <span className="text-gray-700 group-hover:text-gray-900 transition-colors">{note}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
 
       {/* Map Section */}
       <MapSection />
@@ -166,12 +188,12 @@ export default function Home() {
         </div>
         <ul className="space-y-3">
           {[
-            { time: "10:00 PM", activity: "Penang Hill (Bukit Bendera)" },
+            { time: "10:00 AM", activity: "Penang Hill (Bukit Bendera)" },
             { time: "1:00 PM", activity: "Lunch at ..." },
             { time: "4:00 PM", activity: "Plushy Workshop - OLO STUDIO [Booked]" },
-            { time: "6:00 PM", activity: "Going Back to MACA for rest & prayer" },
+            { time: "6:00 PM", activity: "Going Back to Maca for rest & prayer" },
             { time: "8:00 PM", activity: "Dinner" },
-            { time: "9:00 PM", activity: "Night Drive and Free Activity" },
+            { time: "9:00 PM", activity: "Night Drive | Tan Chew Jetty | Free Activity" },
           ].map((item, index) => (
             <li key={index} className="flex items-start space-x-3 group hover:translate-x-1 transition-transform">
               <span className="font-bold text-[#a5d8ff] min-w-[70px] text-sm">{item.time}</span>
@@ -191,7 +213,7 @@ export default function Home() {
           {[
             { time: "12:00 PM", activity: "Checkout from Maca " },
             { time: "1:00 PM", activity: "Makan Lunch" },
-            { time: "3:00 PM", activity: "Street Art" },
+            { time: "3:00 PM", activity: "Street Art | Photo Booth | Ice Ball" },
             { time: "7:00 PM", activity: "Prepare balik ke destinasi masing-masing" }
           ].map((item, index) => (
             <li key={index} className="flex items-start space-x-3 group hover:translate-x-1 transition-transform">
