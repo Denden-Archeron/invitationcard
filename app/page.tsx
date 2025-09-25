@@ -111,7 +111,7 @@ export default function Home() {
                 {/* Day Outfits */}
                 <tr className="hover:bg-gray-50">
                   <td className="px-3 py-2 border-b font-medium">Day</td>
-                  <td className="px-3 py-2 border-b">Brown / White</td>
+                  <td className="px-3 py-2 border-b">Brown / White / Black</td>
                   <td className="px-3 py-2 border-b">Khaki / Blue Jeans</td>
                   <td className="px-3 py-2 border-b text-gray-500">
                     Two combos: (Brown main) or (Black top + Blue jeans)
@@ -131,7 +131,7 @@ export default function Home() {
           </div>
         </div>
 
-        <Info label="⏰ Meeting Time">Saturday 26th of September 2025</Info>
+        <Info label="⏰ Meeting Time">Friday 26th of September 2025</Info>
       </section>
 
 
